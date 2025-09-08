@@ -1,0 +1,205 @@
+body {
+  font-family: 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  background: #E6F0FA;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background: #99CCFF;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#welcome {
+  background-image: url(https://img.freepik.com/premium-photo/workout-concept-with-kettle-bells-dumbbells_493806-8995.jpg);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: white;
+  width: 100vw;
+  min-height: 80vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#welcome h1 {
+  font-size: 100px;
+  margin-bottom: 5px;
+}
+
+#welcome p {
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+#welcome button {
+  padding: 15px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  background: black;
+  color: #E6F0FA;
+  cursor: pointer;
+}
+
+#welcome button:hover {
+  background: #333;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === Centering Changes Start Here === */
+.card {
+  background: #E6F0FA;
+  border: 2px solid #99CCFF;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background: #cce0ff;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card p,
+.card small {
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+}
+/* === Centering Changes End Here === */
+
+.hidden {
+  display: none;
+}
+
+.back-btn, .button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: black;
+  color: #E6F0FA;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+}
+
+.back-btn:hover, .button:hover {
+  background: #333;
+}
+
+.bmi-container, .contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 2px solid #99CCFF;
+  border-radius: 12px;
+  background: #E6F0FA;
+}
+
+.bmi-container input, .contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #99CCFF;
+}
+
+.bmi-container button, .contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: #E6F0FA;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bmi-container button:hover, .contact-form button:hover {
+  background: #333;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: black;
+}
+
+.app-container {
+  width: 100vw;
+  min-height: 100vh;
+
+  /* Add flexbox layout */
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 15px;
+  background: #E6F0FA;
+}
+
+footer {
+  margin-top: auto; /* push footer to bottom */
+  text-align: center;
+  padding: 25px 20px;
+  background: #99CCFF;
+  font-weight: bold;
+}
